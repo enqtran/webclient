@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>WebRTC Page</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<style>
+			video {
+				background-color: #ddd;
+				border-radius: 4px;
+				border: 1px solid #333;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="container">
+				<div class="row">
+					<h1 class="text-center">Hello World</h1>
+					<div class="col-md-12">
+						<div class="col-md-6 col-xs-6">
+						<video id="remoteStream" width="100%"></video>
+					</div>
+					<div class="col-md-6 col-xs-6">
+					<video id="localStream" width="100%"></video>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6" >
+				<input type="text" id="remoteId" class="form-control" placeholder="Remote ID">
+			</div>
+			<div class="col-md-6">
+				<button id="btnCall" class="btn btn-primary btn-block">Call</button>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/webrtc.js"></script>
+</body>
+</html>
